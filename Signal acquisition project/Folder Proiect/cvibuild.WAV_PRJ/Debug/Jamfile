@@ -1,0 +1,43 @@
+CCFLAGS = -g ;
+HDRS = 	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\activex\\word"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\activex\\excel"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\custctrl"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\custctrl\\custsupp"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\cvirtsup"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\datasock"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\daqUtil"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\printing"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\toolbox"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\reportgen"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\localui"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\instr"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2020\\instr"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2020\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\include\\ansi"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\include\\clang\\3.3"
+	"c:\\Program Files\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files (x86)\\IVI Foundation\\VISA\\winnt\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\MSDTRedistributables\\SDKHeaderFiles\\8.1"
+	"c:\\Program Files (x86)\\National Instruments\\CVI2020\\bin"
+	"c:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\Bin"
+	;
+include Jamfile_instr ;
+LOCATE on "Interfata.h" = "c:\\Users\\npint\\OneDrive\\Desktop\\Facultate\\An 3\\Sem 1\\Achizitia si prelucrarea datelor\\Proiect\\Pintilie_Razvan_Nicolae_1306B\\Folder Proiect" ;
+LOCATE on "main.c" = "c:\\Users\\npint\\OneDrive\\Desktop\\Facultate\\An 3\\Sem 1\\Achizitia si prelucrarea datelor\\Proiect\\Pintilie_Razvan_Nicolae_1306B\\Folder Proiect" ;
+Object "c:\\Users\\npint\\OneDrive\\Desktop\\Facultate\\An 3\\Sem 1\\Achizitia si prelucrarea datelor\\Proiect\\Pintilie_Razvan_Nicolae_1306B\\Folder Proiect\\cvibuild.WAV_PRJ\\Debug\\main.obj" : "c:\\Users\\npint\\OneDrive\\Desktop\\Facultate\\An 3\\Sem 1\\Achizitia si prelucrarea datelor\\Proiect\\Pintilie_Razvan_Nicolae_1306B\\Folder Proiect\\main.c" ;
+FILENUM on "c:\\Users\\npint\\OneDrive\\Desktop\\Facultate\\An 3\\Sem 1\\Achizitia si prelucrarea datelor\\Proiect\\Pintilie_Razvan_Nicolae_1306B\\Folder Proiect\\cvibuild.WAV_PRJ\\Debug\\main.obj" = 1 ;
+DEFPROTS on "c:\\Users\\npint\\OneDrive\\Desktop\\Facultate\\An 3\\Sem 1\\Achizitia si prelucrarea datelor\\Proiect\\Pintilie_Razvan_Nicolae_1306B\\Folder Proiect\\cvibuild.WAV_PRJ\\Debug\\main.obj" = "c:\\Users\\npint\\OneDrive\\Desktop\\Facultate\\An 3\\Sem 1\\Achizitia si prelucrarea datelor\\Proiect\\Pintilie_Razvan_Nicolae_1306B\\Folder Proiect\\cvibuild.WAV_PRJ\\Debug\\main.obj.cvidefprots" ;
+OUTFILE on "c:\\Users\\npint\\OneDrive\\Desktop\\Facultate\\An 3\\Sem 1\\Achizitia si prelucrarea datelor\\Proiect\\Pintilie_Razvan_Nicolae_1306B\\Folder Proiect\\cvibuild.WAV_PRJ\\Debug\\main.obj" = "c:\\Users\\npint\\OneDrive\\Desktop\\Facultate\\An 3\\Sem 1\\Achizitia si prelucrarea datelor\\Proiect\\Pintilie_Razvan_Nicolae_1306B\\Folder Proiect\\cvibuild.WAV_PRJ\\Debug\\main.obj.out" ;
+PrjObjects += "c:\\Users\\npint\\OneDrive\\Desktop\\Facultate\\An 3\\Sem 1\\Achizitia si prelucrarea datelor\\Proiect\\Pintilie_Razvan_Nicolae_1306B\\Folder Proiect\\cvibuild.WAV_PRJ\\Debug\\main.obj" ;
+Object "c:\\Users\\npint\\OneDrive\\Desktop\\Facultate\\An 3\\Sem 1\\Achizitia si prelucrarea datelor\\Proiect\\Pintilie_Razvan_Nicolae_1306B\\Folder Proiect\\cvibuild.WAV_PRJ\\Debug\\resources.res" : "c:\\Users\\npint\\OneDrive\\Desktop\\Facultate\\An 3\\Sem 1\\Achizitia si prelucrarea datelor\\Proiect\\Pintilie_Razvan_Nicolae_1306B\\Folder Proiect\\cvibuild.WAV_PRJ\\Debug\\resources.in.rc" ;
+Depends "c:\\Users\\npint\\OneDrive\\Desktop\\Facultate\\An 3\\Sem 1\\Achizitia si prelucrarea datelor\\Proiect\\Pintilie_Razvan_Nicolae_1306B\\Folder Proiect\\cvibuild.WAV_PRJ\\Debug\\resources.res" : "c:\\Users\\npint\\OneDrive\\Desktop\\Facultate\\An 3\\Sem 1\\Achizitia si prelucrarea datelor\\Proiect\\Pintilie_Razvan_Nicolae_1306B\\Folder Proiect\\cvibuild.WAV_PRJ\\Debug\\manifest.xml" ;
+MainFromObjects "c:\\Users\\npint\\OneDrive\\Desktop\\Facultate\\An 3\\Sem 1\\Achizitia si prelucrarea datelor\\Proiect\\Pintilie_Razvan_Nicolae_1306B\\Folder Proiect\\cvibuild.WAV_PRJ\\Debug\\WAV_PRJ.exe" : $(PrjObjects) $(InstrObjects) ;
+Depends "c:\\Users\\npint\\OneDrive\\Desktop\\Facultate\\An 3\\Sem 1\\Achizitia si prelucrarea datelor\\Proiect\\Pintilie_Razvan_Nicolae_1306B\\Folder Proiect\\cvibuild.WAV_PRJ\\Debug\\WAV_PRJ.exe" : "c:\\Users\\npint\\OneDrive\\Desktop\\Facultate\\An 3\\Sem 1\\Achizitia si prelucrarea datelor\\Proiect\\Pintilie_Razvan_Nicolae_1306B\\Folder Proiect\\cvibuild.WAV_PRJ\\Debug\\link_options.txt" ;
+Depends "c:\\Users\\npint\\OneDrive\\Desktop\\Facultate\\An 3\\Sem 1\\Achizitia si prelucrarea datelor\\Proiect\\Pintilie_Razvan_Nicolae_1306B\\Folder Proiect\\cvibuild.WAV_PRJ\\Debug\\WAV_PRJ.exe" : "c:\\Users\\npint\\OneDrive\\Desktop\\Facultate\\An 3\\Sem 1\\Achizitia si prelucrarea datelor\\Proiect\\Pintilie_Razvan_Nicolae_1306B\\Folder Proiect\\cvibuild.WAV_PRJ\\Debug\\resources.res" ;
+Depends all : "c:\\Users\\npint\\OneDrive\\Desktop\\Facultate\\An 3\\Sem 1\\Achizitia si prelucrarea datelor\\Proiect\\Pintilie_Razvan_Nicolae_1306B\\Folder Proiect\\cvibuild.WAV_PRJ\\Debug\\WAV_PRJ.exe" ;

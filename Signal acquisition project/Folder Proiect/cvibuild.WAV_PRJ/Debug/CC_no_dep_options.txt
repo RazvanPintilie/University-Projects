@@ -1,0 +1,1 @@
+-force-include-file "Interfata.h";"c:\Users\npint\OneDrive\Desktop\Facultate\An 3\Sem 1\Achizitia si prelucrarea datelor\Proiect\Pintilie_Razvan_Nicolae_1306B\Folder Proiect\Interfata.h" -force-include-file "main.c";"c:\Users\npint\OneDrive\Desktop\Facultate\An 3\Sem 1\Achizitia si prelucrarea datelor\Proiect\Pintilie_Razvan_Nicolae_1306B\Folder Proiect\main.c" 

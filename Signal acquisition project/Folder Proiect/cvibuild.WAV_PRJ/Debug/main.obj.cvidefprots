@@ -1,0 +1,80 @@
+[main]
+Class="Function"
+Prototype="int main(int argc, char *argv[]);"
+SourceLocation="c:\Users\npint\OneDrive\Desktop\Facultate\An 3\Sem 1\Achizitia si prelucrarea datelor\Proiect\Pintilie_Razvan_Nicolae_1306B\Folder Proiect\main.c:74:5"
+
+[OnPanel]
+Class="Function"
+Prototype="int OnPanel(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\npint\OneDrive\Desktop\Facultate\An 3\Sem 1\Achizitia si prelucrarea datelor\Proiect\Pintilie_Razvan_Nicolae_1306B\Folder Proiect\main.c:94:17"
+
+[OnLoad]
+Class="Function"
+Prototype="int OnLoad(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\npint\OneDrive\Desktop\Facultate\An 3\Sem 1\Achizitia si prelucrarea datelor\Proiect\Pintilie_Razvan_Nicolae_1306B\Folder Proiect\main.c:112:17"
+
+[OnPowerSwitch]
+Class="Function"
+Prototype="int OnPowerSwitch(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\npint\OneDrive\Desktop\Facultate\An 3\Sem 1\Achizitia si prelucrarea datelor\Proiect\Pintilie_Razvan_Nicolae_1306B\Folder Proiect\main.c:265:17"
+
+[OnPrev]
+Class="Function"
+Prototype="int OnPrev(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\npint\OneDrive\Desktop\Facultate\An 3\Sem 1\Achizitia si prelucrarea datelor\Proiect\Pintilie_Razvan_Nicolae_1306B\Folder Proiect\main.c:322:17"
+
+[OnNext]
+Class="Function"
+Prototype="int OnNext(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\npint\OneDrive\Desktop\Facultate\An 3\Sem 1\Achizitia si prelucrarea datelor\Proiect\Pintilie_Razvan_Nicolae_1306B\Folder Proiect\main.c:363:17"
+
+[OnFilter]
+Class="Function"
+Prototype="int OnFilter(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\npint\OneDrive\Desktop\Facultate\An 3\Sem 1\Achizitia si prelucrarea datelor\Proiect\Pintilie_Razvan_Nicolae_1306B\Folder Proiect\main.c:391:17"
+
+[OnChooseFilter]
+Class="Function"
+Prototype="int OnChooseFilter(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\npint\OneDrive\Desktop\Facultate\An 3\Sem 1\Achizitia si prelucrarea datelor\Proiect\Pintilie_Razvan_Nicolae_1306B\Folder Proiect\main.c:470:17"
+
+[OnDerivata]
+Class="Function"
+Prototype="int OnDerivata(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\npint\OneDrive\Desktop\Facultate\An 3\Sem 1\Achizitia si prelucrarea datelor\Proiect\Pintilie_Razvan_Nicolae_1306B\Folder Proiect\main.c:492:17"
+
+[OnAnvelopa]
+Class="Function"
+Prototype="int OnAnvelopa(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\npint\OneDrive\Desktop\Facultate\An 3\Sem 1\Achizitia si prelucrarea datelor\Proiect\Pintilie_Razvan_Nicolae_1306B\Folder Proiect\main.c:507:17"
+
+[OnSwitch]
+Class="Function"
+Prototype="int OnSwitch(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\npint\OneDrive\Desktop\Facultate\An 3\Sem 1\Achizitia si prelucrarea datelor\Proiect\Pintilie_Razvan_Nicolae_1306B\Folder Proiect\main.c:522:17"
+
+[OnFrPanel]
+Class="Function"
+Prototype="int OnFrPanel(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\npint\OneDrive\Desktop\Facultate\An 3\Sem 1\Achizitia si prelucrarea datelor\Proiect\Pintilie_Razvan_Nicolae_1306B\Folder Proiect\main.c:545:17"
+
+[OnFereastra]
+Class="Function"
+Prototype="int OnFereastra(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\npint\OneDrive\Desktop\Facultate\An 3\Sem 1\Achizitia si prelucrarea datelor\Proiect\Pintilie_Razvan_Nicolae_1306B\Folder Proiect\main.c:563:17"
+
+[OnPrevFr]
+Class="Function"
+Prototype="int OnPrevFr(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\npint\OneDrive\Desktop\Facultate\An 3\Sem 1\Achizitia si prelucrarea datelor\Proiect\Pintilie_Razvan_Nicolae_1306B\Folder Proiect\main.c:655:17"
+
+[OnNextFr]
+Class="Function"
+Prototype="int OnNextFr(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\npint\OneDrive\Desktop\Facultate\An 3\Sem 1\Achizitia si prelucrarea datelor\Proiect\Pintilie_Razvan_Nicolae_1306B\Folder Proiect\main.c:745:17"
+
+[OnN]
+Class="Function"
+Prototype="int OnN(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\Users\npint\OneDrive\Desktop\Facultate\An 3\Sem 1\Achizitia si prelucrarea datelor\Proiect\Pintilie_Razvan_Nicolae_1306B\Folder Proiect\main.c:849:17"
+
