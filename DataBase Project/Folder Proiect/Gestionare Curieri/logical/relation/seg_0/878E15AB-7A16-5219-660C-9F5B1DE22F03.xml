@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="manager_id_zona_fk" directorySegmentName="seg_0" id="878E15AB-7A16-5219-660C-9F5B1DE22F03">
+<createdBy>npint</createdBy>
+<createdTime>2022-11-04 11:23:46 UTC</createdTime>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<engineerTo>
+<item key="0FE92E86-731B-CC53-681B-AF132B5E31A7" value="true"/>
+</engineerTo>
+<sourcePk>7B25817A-054E-71D0-DD4F-0E77DE04A177</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>responsabili de</nameOnSource>
+<nameOnTarget>corespund</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>BC6CA9A9-AE76-98AB-9421-87632C0E7263</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F7EBB9A1-2249-5DBE-B689-4CD97DBEE3E5</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

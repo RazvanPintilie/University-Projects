@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BE73A57C-3F76-5CC8-7015-6C3B9BFAF143" name="tipuri_rol">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>29BAD610-FEE2-0424-2DD1-A10C6CC3C6F7</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_rol" id="7BE3F879-0B8F-E0B8-640D-5D5B32EDE506">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>57675C92-19B3-81E0-9F8B-B235E444EC29</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<constraintName>tipuri_rol_id_rol_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="id_rol &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tip_rol" id="8F241BE0-0BBB-0903-9980-15371D20192D">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>1F4632BE-08D2-E926-7B19-FF168272E7E1</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<constraintName>tipuri_rol_tip_rol_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>17</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(tip_rol) between 1 and 17"/>
+</checkConstraint>
+<ownDataTypeParameters>17,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="297DC9CE-BE7B-83BB-87EA-ED69A6304C5C" name="tipuri_rol_PK">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>3260EC73-87A5-5D7A-7650-5784CC7A3935</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7BE3F879-0B8F-E0B8-640D-5D5B32EDE506"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="67741294-FF67-2AC3-7848-96456DD6296E" name="tipuri_rol_tip_rol_uk">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>E55B6891-AB5E-E454-F129-3F460C909B55</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F241BE0-0BBB-0903-9980-15371D20192D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="zona_angajat_fk" directorySegmentName="seg_0" id="36D2D073-7DCD-7A61-C6AD-D42F403FA073">
+<createdBy>npint</createdBy>
+<createdTime>2022-11-04 11:23:28 UTC</createdTime>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<engineerTo>
+<item key="0FE92E86-731B-CC53-681B-AF132B5E31A7" value="true"/>
+</engineerTo>
+<sourcePk>30426CFB-DDA4-4018-0108-E8A4057DAA3E</sourcePk>
+<targetPk>6FBC3667-A655-1CD8-8315-33653527B7D0</targetPk>
+<identifying>false</identifying>
+<nameOnSource>facute de</nameOnSource>
+<nameOnTarget>livreaza pe</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F7EBB9A1-2249-5DBE-B689-4CD97DBEE3E5</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>AD68EA75-9FB3-CB82-A1FD-767D0B08885A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

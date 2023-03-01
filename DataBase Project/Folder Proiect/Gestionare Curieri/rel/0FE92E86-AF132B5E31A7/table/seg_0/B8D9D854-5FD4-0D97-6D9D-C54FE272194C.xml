@@ -1,0 +1,153 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B8D9D854-5FD4-0D97-6D9D-C54FE272194C" name="adrese">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>3FA98220-BCE3-7282-3A08-E25269A7FABB</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_adresa" id="721B04ED-3130-E95F-06A6-18B82DD3B178">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>03AD85D3-989F-E979-BAB1-E7BA3B0EE557</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<constraintName>adrese_id_adresa_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="id_adresa &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nume_strada" id="DD389566-3A12-3F20-AF8B-2C329F32FF4B">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>D0D578DE-FF73-7425-9C0B-2FF9CB31322A</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<constraintName>adrese_nume_strada_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(nume_strada,&apos;^[A-Za-z]+((\s)?(-)?([A-Za-z])+)*$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numar_strada" id="0698D5FF-DCC6-F5BD-A65C-84513ED87C76">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>492F989C-8B4D-F474-5A11-A67A211BB740</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<constraintName>adrese_numar_strada_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="numar_strada &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_zona" id="637F10C8-D48E-46CC-96BB-8247266C8830">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>E236A81A-D252-3E90-7448-99D03CD0C27C</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C1B678ED-FAEA-9FE1-7316-7BA9B6A16610" referredColumn="5DF3440B-4ADB-5EFC-2B3D-67A463E6A36B"/>
+</associations>
+</Column>
+<Column name="id_observatie" id="78314C0B-B945-9591-A86D-F2BC259BDA2E">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>F8A4BD2E-A576-A7F9-0E07-B41F49D39C77</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="24A59EB1-1831-927B-FA86-8FF911BF95D1" referredColumn="5C46AB07-E52B-19EB-73EA-130EFF654E74"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BC14E0BB-28CE-C9E7-3776-A3D665ED281A" name="adrese_PK">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>A6E986FE-0F18-3DFA-3F65-1F9A3E5F6548</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="721B04ED-3130-E95F-06A6-18B82DD3B178"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="60B54AFA-6668-AA2A-98B7-42791F7FCA5D" name="adrese_numenumar_uk">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>41CAD693-690B-6007-2D4B-4AC20B5CCB02</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DD389566-3A12-3F20-AF8B-2C329F32FF4B"/>
+<colUsage columnID="0698D5FF-DCC6-F5BD-A65C-84513ED87C76"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="18D30DB1-0D8B-DD6F-0A72-80A3A9BCF9B8" name="adrese__IDX">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>522A26EC-65E7-65A4-9EF1-6D6BFE22E2AA</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="78314C0B-B945-9591-A86D-F2BC259BDA2E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6F2B11D2-351C-E8C2-B911-256B564F2AFC" name="id_zona_adresa_fk">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>22A56D2C-13C0-FBEA-8B98-1FDB1F5BD6C5</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="637F10C8-D48E-46CC-96BB-8247266C8830"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E402324B-1CBA-230F-9ACD-E4AB4D7241FE" name="observatie_adresa_fk">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>522A26EC-65E7-65A4-9EF1-6D6BFE22E2AA</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="78314C0B-B945-9591-A86D-F2BC259BDA2E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

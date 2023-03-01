@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="E632DBE6-BB22-6C11-E98D-C3C78A11EDD0">
+<createdBy>npint</createdBy>
+<createdTime>2022-10-21 14:31:53 UTC</createdTime>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

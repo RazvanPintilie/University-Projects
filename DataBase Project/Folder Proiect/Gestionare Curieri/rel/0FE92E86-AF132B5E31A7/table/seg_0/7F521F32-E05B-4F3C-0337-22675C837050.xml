@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7F521F32-E05B-4F3C-0337-22675C837050" name="angajati">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>AD68EA75-9FB3-CB82-A1FD-767D0B08885A</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_angajat" id="C915B930-562E-BC12-9EE6-E068CFBCA6F7">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>6BD99C65-E680-161A-5EE3-7027EA59E723</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<constraintName>angajati_id_angajat_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="id_angajat &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nume" id="101AC676-4E98-228D-46A3-FC044E055A2B">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>7A1957B9-A0AD-78FD-3803-265E022287DA</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<constraintName>angajati_nume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(nume,&apos;^[A-Za-z]+((\s)?(-)?([A-Za-z])+)*$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prenume" id="A0235099-EBA5-7C53-1E50-497ED1605DE2">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>5D622B19-C14D-FBF5-5F48-7308CE14949D</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<constraintName>angajati_prenume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(prenume,&apos;^[A-Za-z]+((\s)?(-)?([A-Za-z])+)*$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_rol" id="0D243E0C-BEF6-AF87-D6AA-E6BAAA820D7F">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>E7B335A9-67E6-AFCD-9A33-CDE48FDCABBC</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="14BE8BA2-4CCC-B44A-EBDD-C426E727A292" referredColumn="7BE3F879-0B8F-E0B8-640D-5D5B32EDE506"/>
+</associations>
+</Column>
+<Column name="id_zona" id="82307CAF-8DC4-DBA9-A8CB-E8E97E36BD71">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>F7F19B57-8DAA-1224-346A-8AAC716ED6A3</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FF9BAD65-45BA-F1BF-21C9-AB7616B3F8E5" referredColumn="5DF3440B-4ADB-5EFC-2B3D-67A463E6A36B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0C0C937F-17DE-180C-07A3-A0852C414E19" name="angajati_PK">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>6FBC3667-A655-1CD8-8315-33653527B7D0</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C915B930-562E-BC12-9EE6-E068CFBCA6F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="470379CF-A783-25EE-2681-C58D5A1BED76" name="roluri_angajati_fk">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>5D41D319-5B73-D8C2-A6C3-59BBD816C7FA</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0D243E0C-BEF6-AF87-D6AA-E6BAAA820D7F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8693785E-56A9-9F60-A1BC-A623E633F73E" name="zona_angajat_fk">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>36D2D073-7DCD-7A61-C6AD-D42F403FA073</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="82307CAF-8DC4-DBA9-A8CB-E8E97E36BD71"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

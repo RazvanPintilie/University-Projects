@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="24A59EB1-1831-927B-FA86-8FF911BF95D1" containerWithKeyObject="B8D9D854-5FD4-0D97-6D9D-C54FE272194C" localFKIndex="E402324B-1CBA-230F-9ACD-E4AB4D7241FE" name="observatie_adresa_fk">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>522A26EC-65E7-65A4-9EF1-6D6BFE22E2AA</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<referredTableLongName>observatii</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>463E1820-F4D2-16D5-485E-BDC351CFB43D</referredTableID>
+<keyObject>18C0CB77-5814-CB7B-6350-562B9E11516E</keyObject>
+<referredKeyID>18C0CB77-5814-CB7B-6350-562B9E11516E</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_observatie</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

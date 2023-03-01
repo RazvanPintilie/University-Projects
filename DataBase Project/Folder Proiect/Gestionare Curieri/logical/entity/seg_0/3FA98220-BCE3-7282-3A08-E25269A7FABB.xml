@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3FA98220-BCE3-7282-3A08-E25269A7FABB" name="adrese">
+<createdBy>npint</createdBy>
+<createdTime>2022-10-21 14:43:05 UTC</createdTime>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<engineerTo>
+<item key="0FE92E86-731B-CC53-681B-AF132B5E31A7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_adresa" id="03AD85D3-989F-E979-BAB1-E7BA3B0EE557">
+<createdBy>npint</createdBy>
+<createdTime>2022-10-21 14:44:28 UTC</createdTime>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<engineerTo>
+<item key="0FE92E86-731B-CC53-681B-AF132B5E31A7" value="true"/>
+</engineerTo>
+<constraintName>adrese_id_adresa_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="id_adresa &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nume_strada" id="D0D578DE-FF73-7425-9C0B-2FF9CB31322A">
+<createdBy>npint</createdBy>
+<createdTime>2022-10-21 14:43:15 UTC</createdTime>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<engineerTo>
+<item key="0FE92E86-731B-CC53-681B-AF132B5E31A7" value="true"/>
+</engineerTo>
+<constraintName>adrese_nume_strada_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(nume_strada,&apos;^[A-Za-z]+((\s)?(-)?([A-Za-z])+)*$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numar_strada" id="492F989C-8B4D-F474-5A11-A67A211BB740">
+<createdBy>npint</createdBy>
+<createdTime>2022-10-21 14:43:46 UTC</createdTime>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<engineerTo>
+<item key="0FE92E86-731B-CC53-681B-AF132B5E31A7" value="true"/>
+</engineerTo>
+<constraintName>adrese_numar_strada_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="numar_strada &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_zona" id="E236A81A-D252-3E90-7448-99D03CD0C27C">
+<createdBy>npint</createdBy>
+<createdTime>2022-11-04 11:23:39 UTC</createdTime>
+<generatorID>22A56D2C-13C0-FBEA-8B98-1FDB1F5BD6C5</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<engineerTo>
+<item key="0FE92E86-731B-CC53-681B-AF132B5E31A7" value="true"/>
+</engineerTo>
+<referedAttribute>1FF7B992-CE30-3765-8DC1-5264DE5FB643</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_observatie" id="F8A4BD2E-A576-A7F9-0E07-B41F49D39C77">
+<createdBy>npint</createdBy>
+<createdTime>2022-11-30 08:15:35 UTC</createdTime>
+<generatorID>522A26EC-65E7-65A4-9EF1-6D6BFE22E2AA</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<engineerTo>
+<item key="0FE92E86-731B-CC53-681B-AF132B5E31A7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>6D2CDEC3-8118-5476-35DD-C4D4E33F61CD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A6E986FE-0F18-3DFA-3F65-1F9A3E5F6548" name="adrese PK">
+<createdBy>npint</createdBy>
+<createdTime>2022-10-21 14:44:41 UTC</createdTime>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="0FE92E86-731B-CC53-681B-AF132B5E31A7" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>03AD85D3-989F-E979-BAB1-E7BA3B0EE557</newElementsIDs>
+<usedAttributes>
+<attributeRef>03AD85D3-989F-E979-BAB1-E7BA3B0EE557</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="41CAD693-690B-6007-2D4B-4AC20B5CCB02" name="adrese_numenumar_uk">
+<createdBy>npint</createdBy>
+<createdTime>2022-11-23 12:03:10 UTC</createdTime>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="0FE92E86-731B-CC53-681B-AF132B5E31A7" value="false"/>
+</engineerTo>
+<newElementsIDs>D0D578DE-FF73-7425-9C0B-2FF9CB31322A,492F989C-8B4D-F474-5A11-A67A211BB740</newElementsIDs>
+<usedAttributes>
+<attributeRef>D0D578DE-FF73-7425-9C0B-2FF9CB31322A</attributeRef>
+<attributeRef>492F989C-8B4D-F474-5A11-A67A211BB740</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

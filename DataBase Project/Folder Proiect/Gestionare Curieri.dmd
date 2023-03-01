@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Gestionare Curieri" id="B31319DE-373B-9B59-E1FF-0DFAB6C25E28" version="3.5">
+<createdBy>npint</createdBy>
+<createdTime>2022-10-21 14:31:53 UTC</createdTime>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>B31319DE-373B-9B59-E1FF-0DFAB6C25E28</designId>
+</OSDM_Design>

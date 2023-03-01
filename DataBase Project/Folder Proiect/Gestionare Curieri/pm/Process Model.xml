@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="D8F59AB8-8A62-86A8-2936-87490A5B8C5D">
+<createdBy>npint</createdBy>
+<createdTime>2022-10-21 14:31:53 UTC</createdTime>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

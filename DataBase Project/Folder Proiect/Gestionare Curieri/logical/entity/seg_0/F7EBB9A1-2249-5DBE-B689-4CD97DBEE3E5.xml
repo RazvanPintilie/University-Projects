@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F7EBB9A1-2249-5DBE-B689-4CD97DBEE3E5" name="zone">
+<createdBy>npint</createdBy>
+<createdTime>2022-11-04 11:22:53 UTC</createdTime>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<engineerTo>
+<item key="0FE92E86-731B-CC53-681B-AF132B5E31A7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_zona" id="1FF7B992-CE30-3765-8DC1-5264DE5FB643">
+<createdBy>npint</createdBy>
+<createdTime>2022-11-04 11:22:53 UTC</createdTime>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<engineerTo>
+<item key="0FE92E86-731B-CC53-681B-AF132B5E31A7" value="true"/>
+</engineerTo>
+<constraintName>zone_id_zona_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="id_zona &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="denumire" id="FBB5BE39-6A60-9BEE-8E40-EB8F0C2A6F35">
+<createdBy>npint</createdBy>
+<createdTime>2022-11-04 11:22:53 UTC</createdTime>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<engineerTo>
+<item key="0FE92E86-731B-CC53-681B-AF132B5E31A7" value="true"/>
+</engineerTo>
+<constraintName>zone_denumire_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(denumire) between 1 and 20"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="parinte" id="198A81D2-F2BC-8EDA-9E2A-84E112A1BD2F">
+<createdBy>npint</createdBy>
+<createdTime>2022-11-04 11:22:53 UTC</createdTime>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<engineerTo>
+<item key="0FE92E86-731B-CC53-681B-AF132B5E31A7" value="true"/>
+</engineerTo>
+<constraintName>zone_parinte_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="parinte &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_manager" id="6ACAEE60-A39D-3BD4-4CE0-4D60B4A8CD79">
+<createdBy>npint</createdBy>
+<createdTime>2022-11-04 11:23:46 UTC</createdTime>
+<generatorID>878E15AB-7A16-5219-660C-9F5B1DE22F03</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<engineerTo>
+<item key="0FE92E86-731B-CC53-681B-AF132B5E31A7" value="true"/>
+</engineerTo>
+<referedAttribute>798B881D-7618-F2ED-A8AF-EF6467BED98E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="30426CFB-DDA4-4018-0108-E8A4057DAA3E" name="zone PK">
+<createdBy>npint</createdBy>
+<createdTime>2022-11-04 11:22:53 UTC</createdTime>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<engineerTo>
+<item key="0FE92E86-731B-CC53-681B-AF132B5E31A7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>1FF7B992-CE30-3765-8DC1-5264DE5FB643</newElementsIDs>
+<usedAttributes>
+<attributeRef>1FF7B992-CE30-3765-8DC1-5264DE5FB643</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="99AAE7D6-EB51-81FF-A69B-764058F7CA87" name="zone_denumire_uk">
+<createdBy>npint</createdBy>
+<createdTime>2022-11-23 12:01:51 UTC</createdTime>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<engineerTo>
+<item key="0FE92E86-731B-CC53-681B-AF132B5E31A7" value="true"/>
+</engineerTo>
+<newElementsIDs>FBB5BE39-6A60-9BEE-8E40-EB8F0C2A6F35</newElementsIDs>
+<usedAttributes>
+<attributeRef>FBB5BE39-6A60-9BEE-8E40-EB8F0C2A6F35</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

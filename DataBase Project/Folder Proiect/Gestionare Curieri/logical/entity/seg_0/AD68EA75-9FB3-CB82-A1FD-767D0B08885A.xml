@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AD68EA75-9FB3-CB82-A1FD-767D0B08885A" name="angajati">
+<createdBy>npint</createdBy>
+<createdTime>2022-10-21 14:39:50 UTC</createdTime>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<engineerTo>
+<item key="0FE92E86-731B-CC53-681B-AF132B5E31A7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_angajat" id="6BD99C65-E680-161A-5EE3-7027EA59E723">
+<createdBy>npint</createdBy>
+<createdTime>2022-10-21 14:40:02 UTC</createdTime>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<engineerTo>
+<item key="0FE92E86-731B-CC53-681B-AF132B5E31A7" value="true"/>
+</engineerTo>
+<constraintName>angajati_id_angajat_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="id_angajat &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nume" id="7A1957B9-A0AD-78FD-3803-265E022287DA">
+<createdBy>npint</createdBy>
+<createdTime>2022-10-21 14:40:22 UTC</createdTime>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<engineerTo>
+<item key="0FE92E86-731B-CC53-681B-AF132B5E31A7" value="true"/>
+</engineerTo>
+<constraintName>angajati_nume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(nume,&apos;^[A-Za-z]+((\s)?(-)?([A-Za-z])+)*$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prenume" id="5D622B19-C14D-FBF5-5F48-7308CE14949D">
+<createdBy>npint</createdBy>
+<createdTime>2022-11-18 11:27:28 UTC</createdTime>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<engineerTo>
+<item key="0FE92E86-731B-CC53-681B-AF132B5E31A7" value="true"/>
+</engineerTo>
+<constraintName>angajati_prenume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(prenume,&apos;^[A-Za-z]+((\s)?(-)?([A-Za-z])+)*$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_rol" id="E7B335A9-67E6-AFCD-9A33-CDE48FDCABBC">
+<createdBy>npint</createdBy>
+<createdTime>2022-10-21 15:05:44 UTC</createdTime>
+<generatorID>5D41D319-5B73-D8C2-A6C3-59BBD816C7FA</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<engineerTo>
+<item key="0FE92E86-731B-CC53-681B-AF132B5E31A7" value="true"/>
+</engineerTo>
+<referedAttribute>57675C92-19B3-81E0-9F8B-B235E444EC29</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_zona" id="F7F19B57-8DAA-1224-346A-8AAC716ED6A3">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 09:09:01 UTC</createdTime>
+<generatorID>36D2D073-7DCD-7A61-C6AD-D42F403FA073</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<engineerTo>
+<item key="0FE92E86-731B-CC53-681B-AF132B5E31A7" value="true"/>
+</engineerTo>
+<referedAttribute>1FF7B992-CE30-3765-8DC1-5264DE5FB643</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6FBC3667-A655-1CD8-8315-33653527B7D0" name="angajati PK">
+<createdBy>npint</createdBy>
+<createdTime>2022-10-21 14:40:21 UTC</createdTime>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<engineerTo>
+<item key="0FE92E86-731B-CC53-681B-AF132B5E31A7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>6BD99C65-E680-161A-5EE3-7027EA59E723</newElementsIDs>
+<usedAttributes>
+<attributeRef>6BD99C65-E680-161A-5EE3-7027EA59E723</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

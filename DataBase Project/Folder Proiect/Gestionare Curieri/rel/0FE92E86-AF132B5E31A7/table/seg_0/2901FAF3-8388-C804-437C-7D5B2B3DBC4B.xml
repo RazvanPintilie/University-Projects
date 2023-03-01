@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2901FAF3-8388-C804-437C-7D5B2B3DBC4B" name="zone">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>F7EBB9A1-2249-5DBE-B689-4CD97DBEE3E5</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_zona" id="5DF3440B-4ADB-5EFC-2B3D-67A463E6A36B">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>1FF7B992-CE30-3765-8DC1-5264DE5FB643</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<constraintName>zone_id_zona_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="id_zona &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="denumire" id="435ED63F-6CCC-70D0-9FCB-BF82FCA1E737">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>FBB5BE39-6A60-9BEE-8E40-EB8F0C2A6F35</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<constraintName>zone_denumire_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(denumire) between 1 and 20"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="parinte" id="69923676-DDB1-8DC1-D080-269BE07D7F39">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>198A81D2-F2BC-8EDA-9E2A-84E112A1BD2F</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<constraintName>zone_parinte_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="parinte &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_manager" id="8B850842-E2A0-554D-B7D5-A681F85A9358">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>6ACAEE60-A39D-3BD4-4CE0-4D60B4A8CD79</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FC46BBB1-520F-E453-F9C3-15DE4380BA39" referredColumn="2BD567E9-1F04-B707-BC52-CC9239EE1F2D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="35B26A75-ED35-6A00-769B-891E196B7C68" name="zone_PK">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>30426CFB-DDA4-4018-0108-E8A4057DAA3E</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5DF3440B-4ADB-5EFC-2B3D-67A463E6A36B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FAEBAF67-0A76-FE0D-6E45-A82756563164" name="zone_denumire_uk">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>99AAE7D6-EB51-81FF-A69B-764058F7CA87</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="435ED63F-6CCC-70D0-9FCB-BF82FCA1E737"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8C14B264-3180-C997-418C-36CBB175578E" name="manager_id_zona_fk">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>878E15AB-7A16-5219-660C-9F5B1DE22F03</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B850842-E2A0-554D-B7D5-A681F85A9358"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

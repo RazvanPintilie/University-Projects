@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="roluri_angajati_fk" directorySegmentName="seg_0" id="5D41D319-5B73-D8C2-A6C3-59BBD816C7FA">
+<createdBy>npint</createdBy>
+<createdTime>2022-10-21 15:05:44 UTC</createdTime>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<engineerTo>
+<item key="0FE92E86-731B-CC53-681B-AF132B5E31A7" value="true"/>
+</engineerTo>
+<sourcePk>3260EC73-87A5-5D7A-7650-5784CC7A3935</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>corespund</nameOnSource>
+<nameOnTarget>sunt</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>29BAD610-FEE2-0424-2DD1-A10C6CC3C6F7</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>AD68EA75-9FB3-CB82-A1FD-767D0B08885A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

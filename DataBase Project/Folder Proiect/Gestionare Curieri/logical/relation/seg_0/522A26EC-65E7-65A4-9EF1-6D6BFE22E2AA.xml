@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="observatie_adresa_fk" directorySegmentName="seg_0" id="522A26EC-65E7-65A4-9EF1-6D6BFE22E2AA">
+<createdBy>npint</createdBy>
+<createdTime>2022-11-04 10:46:51 UTC</createdTime>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<engineerTo>
+<item key="0FE92E86-731B-CC53-681B-AF132B5E31A7" value="true"/>
+</engineerTo>
+<sourcePk>409CCC43-992C-E9BE-9097-9697AD5DA970</sourcePk>
+<targetPk>A6E986FE-0F18-3DFA-3F65-1F9A3E5F6548</targetPk>
+<dominantRole>62735341-8F25-3133-0595-2AAB11DE6C00</dominantRole>
+<identifying>false</identifying>
+<nameOnSource>despre</nameOnSource>
+<nameOnTarget>descrise de</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>62735341-8F25-3133-0595-2AAB11DE6C00</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>3FA98220-BCE3-7282-3A08-E25269A7FABB</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FF9BAD65-45BA-F1BF-21C9-AB7616B3F8E5" containerWithKeyObject="7F521F32-E05B-4F3C-0337-22675C837050" localFKIndex="8693785E-56A9-9F60-A1BC-A623E633F73E" name="zona_angajat_fk">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>36D2D073-7DCD-7A61-C6AD-D42F403FA073</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<referredTableLongName>zone</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2901FAF3-8388-C804-437C-7D5B2B3DBC4B</referredTableID>
+<keyObject>35B26A75-ED35-6A00-769B-891E196B7C68</keyObject>
+<referredKeyID>35B26A75-ED35-6A00-769B-891E196B7C68</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_zona</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

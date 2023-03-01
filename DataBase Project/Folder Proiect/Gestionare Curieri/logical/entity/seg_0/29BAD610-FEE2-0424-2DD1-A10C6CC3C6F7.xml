@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="29BAD610-FEE2-0424-2DD1-A10C6CC3C6F7" name="tipuri_rol">
+<createdBy>npint</createdBy>
+<createdTime>2022-10-21 14:40:44 UTC</createdTime>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<engineerTo>
+<item key="0FE92E86-731B-CC53-681B-AF132B5E31A7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_rol" id="57675C92-19B3-81E0-9F8B-B235E444EC29">
+<createdBy>npint</createdBy>
+<createdTime>2022-10-21 14:40:56 UTC</createdTime>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<engineerTo>
+<item key="0FE92E86-731B-CC53-681B-AF132B5E31A7" value="true"/>
+</engineerTo>
+<constraintName>tipuri_rol_id_rol_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="id_rol &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tip_rol" id="1F4632BE-08D2-E926-7B19-FF168272E7E1">
+<createdBy>npint</createdBy>
+<createdTime>2022-10-21 14:41:18 UTC</createdTime>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<engineerTo>
+<item key="0FE92E86-731B-CC53-681B-AF132B5E31A7" value="true"/>
+</engineerTo>
+<constraintName>tipuri_rol_tip_rol_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>17</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(tip_rol) between 1 and 17"/>
+</checkConstraint>
+<ownDataTypeParameters>17,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3260EC73-87A5-5D7A-7650-5784CC7A3935" name="tipuri_rol PK">
+<createdBy>npint</createdBy>
+<createdTime>2022-10-21 14:40:58 UTC</createdTime>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<engineerTo>
+<item key="0FE92E86-731B-CC53-681B-AF132B5E31A7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>57675C92-19B3-81E0-9F8B-B235E444EC29</newElementsIDs>
+<usedAttributes>
+<attributeRef>57675C92-19B3-81E0-9F8B-B235E444EC29</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="E55B6891-AB5E-E454-F129-3F460C909B55" name="tipuri_rol_tip_rol_uk">
+<createdBy>npint</createdBy>
+<createdTime>2022-11-23 11:58:22 UTC</createdTime>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<engineerTo>
+<item key="0FE92E86-731B-CC53-681B-AF132B5E31A7" value="true"/>
+</engineerTo>
+<newElementsIDs>1F4632BE-08D2-E926-7B19-FF168272E7E1</newElementsIDs>
+<usedAttributes>
+<attributeRef>1F4632BE-08D2-E926-7B19-FF168272E7E1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

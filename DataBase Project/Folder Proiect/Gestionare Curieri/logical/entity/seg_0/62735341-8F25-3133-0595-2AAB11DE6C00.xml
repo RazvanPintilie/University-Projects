@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="62735341-8F25-3133-0595-2AAB11DE6C00" name="observatii">
+<createdBy>npint</createdBy>
+<createdTime>2022-11-04 10:46:39 UTC</createdTime>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<engineerTo>
+<item key="0FE92E86-731B-CC53-681B-AF132B5E31A7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_observatie" id="6D2CDEC3-8118-5476-35DD-C4D4E33F61CD">
+<createdBy>npint</createdBy>
+<createdTime>2022-11-04 10:50:10 UTC</createdTime>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<engineerTo>
+<item key="0FE92E86-731B-CC53-681B-AF132B5E31A7" value="true"/>
+</engineerTo>
+<constraintName>observatii_id_observatie</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="id_observatie &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descriere" id="08A06839-FB5A-AA4A-8DC8-80CDF691399F">
+<createdBy>npint</createdBy>
+<createdTime>2022-11-04 10:50:28 UTC</createdTime>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<engineerTo>
+<item key="0FE92E86-731B-CC53-681B-AF132B5E31A7" value="true"/>
+</engineerTo>
+<constraintName>observatii_descriere_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(descriere) between 1 and 100"/>
+</checkConstraint>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="409CCC43-992C-E9BE-9097-9697AD5DA970" name="observatii PK">
+<createdBy>npint</createdBy>
+<createdTime>2022-11-04 10:50:21 UTC</createdTime>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<engineerTo>
+<item key="0FE92E86-731B-CC53-681B-AF132B5E31A7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>6D2CDEC3-8118-5476-35DD-C4D4E33F61CD</newElementsIDs>
+<usedAttributes>
+<attributeRef>6D2CDEC3-8118-5476-35DD-C4D4E33F61CD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

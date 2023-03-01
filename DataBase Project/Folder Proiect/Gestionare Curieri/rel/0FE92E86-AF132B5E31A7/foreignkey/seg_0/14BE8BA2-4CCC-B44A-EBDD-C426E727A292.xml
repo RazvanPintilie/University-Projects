@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="14BE8BA2-4CCC-B44A-EBDD-C426E727A292" containerWithKeyObject="7F521F32-E05B-4F3C-0337-22675C837050" localFKIndex="470379CF-A783-25EE-2681-C58D5A1BED76" name="roluri_angajati_fk">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>5D41D319-5B73-D8C2-A6C3-59BBD816C7FA</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<referredTableLongName>tipuri_rol</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BE73A57C-3F76-5CC8-7015-6C3B9BFAF143</referredTableID>
+<keyObject>297DC9CE-BE7B-83BB-87EA-ED69A6304C5C</keyObject>
+<referredKeyID>297DC9CE-BE7B-83BB-87EA-ED69A6304C5C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_rol</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

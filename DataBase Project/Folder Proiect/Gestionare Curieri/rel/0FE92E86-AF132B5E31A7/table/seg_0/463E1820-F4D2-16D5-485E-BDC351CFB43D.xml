@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="463E1820-F4D2-16D5-485E-BDC351CFB43D" name="observatii">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>62735341-8F25-3133-0595-2AAB11DE6C00</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_observatie" id="5C46AB07-E52B-19EB-73EA-130EFF654E74">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>6D2CDEC3-8118-5476-35DD-C4D4E33F61CD</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<constraintName>observatii_id_observatie</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="id_observatie &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descriere" id="34B7FE15-DDB9-A051-099C-5083FAFCE337">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>08A06839-FB5A-AA4A-8DC8-80CDF691399F</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<constraintName>observatii_descriere_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(descriere) between 1 and 100"/>
+</checkConstraint>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="18C0CB77-5814-CB7B-6350-562B9E11516E" name="observatii_PK">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>409CCC43-992C-E9BE-9097-9697AD5DA970</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C46AB07-E52B-19EB-73EA-130EFF654E74"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

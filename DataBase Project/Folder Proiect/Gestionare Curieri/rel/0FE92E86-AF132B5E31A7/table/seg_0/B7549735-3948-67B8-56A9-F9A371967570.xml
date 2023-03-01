@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B7549735-3948-67B8-56A9-F9A371967570" name="manageri_depozit">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>BC6CA9A9-AE76-98AB-9421-87632C0E7263</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_manager" id="2BD567E9-1F04-B707-BC52-CC9239EE1F2D">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>798B881D-7618-F2ED-A8AF-EF6467BED98E</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<constraintName>manageri_depozit_id_manager_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="id_manager &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nume" id="18AB732B-ECFB-9076-E786-464FB795C518">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>60F33DDF-956B-F61F-3D04-33B66C72DD74</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<constraintName>manageri_depozit_nume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(nume,&apos;^[A-Za-z]+((\s)?(-)?([A-Za-z])+)*$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prenume" id="2CFB3CEA-0A89-CE58-48CC-02FFFCED0EEE">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>668D2ED3-17C9-BA04-57E4-CAEFF4F144E7</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<constraintName>manageri_depozit_prenume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(prenume,&apos;^[A-Za-z]+((\s)?(-)?([A-Za-z])+)*$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A0377580-92C8-1F0F-3842-D42A9856FCBC" name="manageri_depozit_PK">
+<createdBy>npint</createdBy>
+<createdTime>2022-12-01 20:13:00 UTC</createdTime>
+<generatorID>7B25817A-054E-71D0-DD4F-0E77DE04A177</generatorID>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2BD567E9-1F04-B707-BC52-CC9239EE1F2D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

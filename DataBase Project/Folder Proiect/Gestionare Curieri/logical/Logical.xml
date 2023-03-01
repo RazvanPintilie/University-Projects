@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="B7FE25F0-7924-F6CE-40F4-83D42AE22D9D" mainViewID="C8BE282B-5A02-5EC8-5A65-DC36B98DBEA8">
+<createdBy>npint</createdBy>
+<createdTime>2022-10-21 14:31:53 UTC</createdTime>
+<ownerDesignName>Gestionare Curieri</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>
