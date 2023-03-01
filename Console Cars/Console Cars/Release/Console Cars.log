@@ -1,0 +1,8 @@
+﻿  Console Cars.cpp
+C:\Users\npint\OneDrive\Desktop\Console Cars\Console Cars\Console Cars.cpp(123,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+C:\Users\npint\OneDrive\Desktop\Console Cars\Console Cars\Console Cars.cpp(22): warning C4715: 'test': not all control paths return a value
+  All 29 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Console Cars.vcxproj -> C:\Users\npint\OneDrive\Desktop\Console Cars\Release\Console Cars.exe
